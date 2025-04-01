@@ -1,0 +1,184 @@
+/*Colors*/
+:root {
+    --primary-color: #d13b66;
+    --secondary-color: #93abbc;
+    --third-color: #8eb735;
+    --fourth-color: #d1b3c2;
+    --fifth-color: #d8dadb;
+    --sixth-color: #e7b0c6;
+    --scroll: #3e3e3f;
+    --body: #8b8b8b;
+    --bg-elements: #e6e7e7;
+    --nav: #ffffff;
+    --font: #b8cdda;
+}
+
+/*Font*/
+.font {
+    font-family: 'Roboto Slab', serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Scrollbar*/
+body {
+    background-color: var(--body);
+}
+
+body::-webkit-scrollbar {
+    width: 8px;   
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent
+}
+  
+body::-webkit-scrollbar-thumb {
+    position: fixed;
+    background-color: var(--scroll); 
+    border-radius: 20px;  
+    border: 10px solid transparent;
+}
+
+/*Navbar*/
+.f-input {
+    border-radius: 50px 50px 50px 50px;
+    background: transparent;
+}
+
+.form {
+    background-color: var(--bg-elements);
+    border-radius: 50px 50px 50px 50px;
+}
+
+
+.logo-container {
+    padding: 0 0 0 4rem;
+}
+
+
+.navbar {
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9rem;
+    background-color: var(--nav);
+}
+
+.dropdown-toggle {
+    font-size: 0.9rem;
+}
+
+.search {
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: var(--bg-elements);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search:hover{
+    background-color: #e5e5e5;
+    transition-duration: 0.2s;
+}
+
+.cita {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.max { /*Maximia tu pensión*/
+    color:var(--body) ;
+}
+
+.max:hover{
+    color: black;
+}
+
+/*Legend*/
+
+.legend-container{
+    height: 50vw;
+    background-repeat: no-repeat;
+    background-image: url(src/prueba1.png);
+    background-size: 100%;
+    margin-top: -10px;
+}
+
+.legend-container h1, .legend1 h1{
+    word-spacing: 0.1rem;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*.legend1{
+    background: linear-gradient(60deg, rgba(204,189,157,1) 2%, rgba(133,129,213,1) 77%, rgba(101,101,190,1) 94%);
+
+}*/
+
+.legend1 h1{
+    font-size: 3.4rem;
+    width: 100%;
+
+}
+
+
+/*About us*/
+
+.about{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*Location*/
+.anchor{
+    text-decoration: none;
+}
+
+.anchor:hover {
+    text-decoration: underline;
+}
+
+
+/*Contact Us*/
+.loc {
+    width: 25%;
+}
+
+
+.wapp {
+    background-color: #25d366; 
+    top: 50%; 
+    box-shadow: 5px 5px 5px gray; 
+    top: 85%; 
+    left:93%;
+    z-index: 3;
+}
+
+@media (min-width: 0px) and (max-width: 992px){
+    .loc {
+        width: 100%;
+    }
+    .wapp {
+        top: 85%;
+        left: 85%;
+    }
+}
+
+
+@media (min-width: 0px) and (max-width: 576){
+    .wapp {
+        top: 70%;
+        left: 50%;
+    }
+}
