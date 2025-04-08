@@ -1,11 +1,5 @@
 /*Colors*/
 :root {
-    --primary-color: #d13b66;
-    --secondary-color: #93abbc;
-    --third-color: #8eb735;
-    --fourth-color: #d1b3c2;
-    --fifth-color: #d8dadb;
-    --sixth-color: #e7b0c6;
     --scroll: #3e3e3f;
     --body: #8b8b8b;
     --bg-elements: #e6e7e7;
@@ -19,6 +13,9 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+.font-color {
+    color: var(--font);
 }
 
 /*Scrollbar*/
@@ -102,36 +99,55 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*Legend*/
-
-.legend-container{
-    height: 50vw;
-    background-repeat: no-repeat;
-    background-image: url(src/prueba1.png);
-    background-size: 100%;
-    margin-top: -10px;
+.legend {
+    background: linear-gradient(60deg, rgba(204,189,157,1) 2%, rgba(133,129,213,1) 77%, rgba(101,101,190,1) 94%);
 }
 
-.legend-container h1, .legend1 h1{
-    word-spacing: 0.1rem;
-    font-family: "Roboto Slab", serif;
+.h1 {
+    font-size: 300%; 
+    font-family: 'Roboto Slab', serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 
-/*.legend1{
-    background: linear-gradient(60deg, rgba(204,189,157,1) 2%, rgba(133,129,213,1) 77%, rgba(101,101,190,1) 94%);
-
-}*/
-
-.legend1 h1{
-    font-size: 3.4rem;
-    width: 100%;
-
+.legend-xs h1 {
+    font-size: 2rem; 
+    font-family: 'Roboto Slab', serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
+.proyect {
+    color: var(--font); 
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 5px;
+}
+
+.img {
+    height: 15cm;
+}
+
+.proyect-xs {
+    top: 100%;
+}
+
+.proyect-xxl {
+    top: 100%; 
+    height: 20%;
+}
+
+/*EP Logo*/
+.EP {
+    background: rgb(10,106,136);
+    background: linear-gradient(135deg, rgba(10,106,136,1) 0%, rgba(126,148,172,1) 50%, rgba(249,249,249,1) 100%);    
+}
 
 /*About us*/
+.ab_us {
+    background-color: #f3f2eb;
+}
 
 .about{
     font-family: "Roboto Slab", serif;
@@ -140,7 +156,39 @@ body::-webkit-scrollbar-thumb {
     font-style: normal;
 }
 
+/*Services*/
+.servs {
+    background: rgb(10,106,136);
+    background: linear-gradient(135deg, rgba(10,106,136,1) 0%, rgba(126,148,172,1) 42%, rgba(237,220,171,1) 100%);
+}
+
+/*NSS*/
+.nss {
+    background-color: rgba(233, 236, 239, 1);
+}
+
+.r-nss {
+    font-size: 1.14rem;
+}
+
+.img-nss {
+    height: 35%;
+}
+
+.img-nss img {
+    width: 85%;
+}
+
+.wsp {
+    color: #6ba54a;
+}
+
 /*Location*/
+.location-container {
+    background: rgb(241,241,241);
+    background: linear-gradient(135deg, rgba(241,241,241,1) 0%, rgba(153,165,177,1) 42%, rgba(92,129,222,1) 100%);
+}
+
 .anchor{
     text-decoration: none;
 }
@@ -151,8 +199,20 @@ body::-webkit-scrollbar-thumb {
 
 
 /*Contact Us*/
+.info {
+    background-color: #2f4d8d; 
+    color: #b1c2e5; 
+    margin-top: -10px;
+}
+
 .loc {
     width: 25%;
+}
+
+.ley73 p:hover, .follow p:hover, .num p:hover, .loc p:hover {
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
 }
 
 
@@ -164,6 +224,14 @@ body::-webkit-scrollbar-thumb {
     left:93%;
     z-index: 3;
 }
+
+/*Copy Right*/
+
+.copy {
+    background-color: #284278;
+}
+
+/*Media Querys*/
 
 @media (min-width: 0px) and (max-width: 992px){
     .loc {
@@ -183,8 +251,31 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+/*Animaciones*/ 
+.cont {
+    background-color: #15213a;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0000 18.75%, #3b82f6 0 31.25%, #0000 0),
+      linear-gradient(45deg, #0000 18.75%, #3b82f6 0 31.25%, #0000 0),
+      linear-gradient(135deg, #0000 18.75%, #3b82f6 0 31.25%, #0000 0),
+      linear-gradient(45deg, #0000 18.75%, #3b82f6 0 31.25%, #0000 0);
+    background-size: 60px 60px;
+    background-position:
+      0 0,
+      0 0,
+      30px 30px,
+      30px 30px;
+    animation: slide 3s linear infinite;
   }
+  
+  @keyframes slide {
+    to {
+      background-position:
+        60px 0,
+        60px 0,
+        90px 30px,
+        90px 30px;
+    }
+  }
+  
