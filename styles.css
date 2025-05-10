@@ -88,6 +88,7 @@ body::-webkit-scrollbar-thumb {
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+    display: block;
 }
 
 .max { /*Maximia tu pensión*/
@@ -119,23 +120,23 @@ body::-webkit-scrollbar-thumb {
     font-style: normal;
 }
 
+.legend-xxl h1 {
+    font-size: 10rem;
+}
+
 .proyect {
     color: var(--font); 
     background-color: rgba(0, 0, 0, 0.3); 
     border-radius: 5px;
+    top: 75%;
 }
 
-.img {
-    height: 15cm;
+.proyect-xxl-h1 {
+    font-size: 5em;
 }
 
-.proyect-xs {
-    top: 100%;
-}
-
-.proyect-xxl {
-    top: 100%; 
-    height: 20%;
+.proyect-xxl-font {
+    font-size: 3em;
 }
 
 /*EP Logo*/
