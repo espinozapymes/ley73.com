@@ -139,6 +139,12 @@ body::-webkit-scrollbar-thumb {
     font-size: 3em;
 }
 
+.img-xs {
+    width: 100%; 
+    height: 70dvb; 
+    object-fit: cover;
+}
+
 /*EP Logo*/
 .EP {
     background: rgb(10,106,136);
@@ -155,6 +161,10 @@ body::-webkit-scrollbar-thumb {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+}
+
+.spacing {
+    word-spacing: 0.5rem;
 }
 
 /*Services*/
