@@ -220,6 +220,16 @@ body::-webkit-scrollbar-thumb {
     width: 25%;
 }
 
+.info-item a {
+    color: #b1c2e5;
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
 .ley73 p:hover, .follow p:hover, .num p:hover, .loc p:hover {
     text-decoration: underline;
     color: black;
@@ -234,6 +244,12 @@ body::-webkit-scrollbar-thumb {
     top: 85%; 
     left:93%;
     z-index: 3;
+}
+
+.wapp:hover {
+    background-color: black; 
+    transition-duration: 0.5s;
+    cursor: pointer;
 }
 
 /*Copy Right*/
@@ -259,6 +275,91 @@ body::-webkit-scrollbar-thumb {
     .wapp {
         top: 70%;
         left: 50%;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 6000px) {
+    /* Ajustes para pantallas entre 1400px y 3840px */
+    .Espinoza, .about-text {
+        max-width: 1800px;
+    }
+
+    .PYMES, .about-img, .servs-text p, .nss-left {
+        max-width: 600px;
+    }
+
+    .mynavbar_body, .top-part, .bottom-part {
+        max-width: 1400px; 
+    }
+
+    .top-part, .bottom-part {
+	    min-width: 1300px;
+    }
+
+    .mynavbar_body{
+        min-width: 1400px;
+    }
+
+    .m_sep {
+        max-width: 500px;
+        min-width: 380px;
+    }
+
+    .navnav {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Espinoza{
+        min-width: 600px;
+    }
+
+    .PYMES {
+        min-width: 550px;
+
+    }
+
+    .about-text{
+        min-width: 800px;
+    }
+
+    .about-img{
+        min-width: 400px;
+    }
+
+    .servs-text p {
+        min-width: 500px;
+    }   
+
+    .proyect-xxl-h1 {
+        font-size: 4em; 
+    }
+
+    .proyect-xxl-font {
+        font-size: 2em;
+        padding: 2rem;
+    }
+
+    .nss-left {
+        min-width: 650px;
+    }
+
+    .nss-right {
+        max-width: 625px;
+        min-width: 600px;
+    }
+
+    .location-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-item {
+        max-width: 350px;
+        min-width: 300px
     }
 }
 
