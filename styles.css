@@ -279,7 +279,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 1400px) and (max-width: 6000px) {
-    /* Ajustes para pantallas entre 1400px y 3840px */
     .Espinoza, .about-text {
         max-width: 1800px;
     }
