@@ -1,0 +1,512 @@
+/*Colors*/
+:root {
+    --scroll: #3e3e3f;
+    --body: #8b8b8b;
+    --bg-elements: #e6e7e7;
+    --nav: #2C3E50;
+    --font: #b8cdda;
+    --hero: linear-gradient(60deg, #F5F5F5 0%, #7F8C8D 100%);
+    --navfont: #B8C7D1;
+    --bodyfont: #1C1C1C;
+    --background: #F5F5F5;
+    --servs-bg: #1b1b32;
+    --servs-i: #0a0a23;
+}
+
+
+/*Scrollbar*/
+body {
+    background-color: var(--body);
+}
+
+body::-webkit-scrollbar { 
+    width: 8px;   
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent
+}
+  
+body::-webkit-scrollbar-thumb {
+    position: fixed;
+    background-color: var(--scroll); 
+    border-radius: 20px;  
+    border: 10px solid transparent;
+}
+
+/*Navbar*/
+
+
+.f-input {
+    border-radius: 50px 50px 50px 50px;
+    background: transparent;
+}
+
+.form {
+    background-color: var(--bg-elements);
+    border-radius: 50px 50px 50px 50px;
+}
+
+
+.logo-container {
+    padding: 0 0 0 4rem;
+}
+
+.offcanvas-body {
+    background-color: var(--nav);
+}
+
+.navbar {
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9rem;
+    background-color: var(--nav);
+}
+
+#nav-font {
+    color: var(--navfont);
+}
+
+.dropdown-toggle {
+    font-size: 0.9rem;
+}
+
+.search {
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--navfont);
+}
+
+.search:hover{
+    background-color: #e5e5e5;
+    transition-duration: 0.4s;
+    color: black;
+}
+
+.cita {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    display: block;
+    color: var(--navfont);
+    border: 1px solid var(--navfont);
+}
+
+.cita:hover {
+    background-color: var(--navfont);
+    color: var(--nav);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.max { /*Maximia tu pensión*/
+    color:var(--navfont) ;
+}
+
+.max:hover{
+    color: var(--background);
+    transition-duration: .3s;
+}
+
+.tope {
+    height: 85px;
+}
+
+
+/* Cita Informativa */
+.hero {
+    background: var(--hero);
+}
+
+.hero div {
+    color: var(--bodyfont);
+}
+
+.proyect {
+    color: var(--font); 
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 5px;
+    top: 75%;
+}
+
+.proyect-xxl-h1 {
+    font-size: 5em;
+}
+
+.proyect-xxl-font {
+    font-size: 3em;
+}
+
+
+.img-xs, .img {
+    width: 100%; 
+    height: 70dvb; 
+    object-fit: cover;
+}
+
+
+/* About Us */  
+.about-us {
+    height: 600px;
+    padding: 10px;
+    color: var(--bodyfont);
+    background-color: var(--background);
+}
+  
+.about-us .contenedor {
+    max-width: 600px;
+}
+
+.h1 {
+    font-size: 2rem; 
+    font-family: 'Roboto Slab', serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}   
+
+
+
+/* LEY 73 */
+
+.ab-ley73 {
+    background: var(--nav);
+    color: var(--font);
+}
+
+.about-img {
+    max-width: 500px;
+}
+
+/* Servs */
+
+.servs {
+    padding: 40px 40px 60px 40px;
+    background: var(--background);
+}
+  
+.servs .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+  
+.servs .columna:hover {
+    color: white;
+    background-color: var(--servs-bg);
+}
+  
+.servs i {
+    font-size: 2.5rem;
+    color: var(--font);
+    background-color: var(--servs-i);
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+  
+.servs-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+/*NSS*/
+.highlighter {
+    background-color: var(--nav);
+}
+
+.nss {
+    background-color: var(--bg-elements);
+}
+
+.r-nss {
+    font-size: 1.14rem;
+}
+
+.img-nss {
+    height: 35%;
+}
+
+.img-nss img {
+    width: 85%;
+}
+
+.wsp {
+    color: #6ba54a;
+}
+
+/*Location*/
+.date {
+    color: var(--bodyfont);
+}
+
+.location-container {
+    background: var(--hero);
+}
+
+.anchor{
+    text-decoration: none;
+}
+
+.anchor:hover {
+    text-decoration: underline;
+}
+
+/*Contact Us*/
+.info{
+    background-color: var(--bg-elements); 
+    color: var(--bodyfont); 
+    margin-top: -10px;
+}
+
+.loc {
+    width: 25%;
+}
+
+.info-item a {
+    color: var(--bodyfont);
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.ley73 p:hover, .follow p:hover, .num p:hover, .loc p:hover {
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+}
+
+/*Copy Right*/
+
+.copy {
+    background-color: var(--background);
+    color: var(--bodyfont);
+}
+
+/*Media Querys*/
+
+@media (min-width: 0px) and (max-width: 992px){
+    .loc {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1400px) and (max-width: 6000px) {
+    .about-img, .nss-left {
+        max-width: 600px;
+    }
+
+    .mynavbar_body, .top-part, .bottom-part {
+        max-width: 1400px; 
+    }
+
+    .top-part, .bottom-part {
+	    min-width: 1300px;
+    }
+
+    .mynavbar_body{
+        min-width: 1400px;
+    }
+
+    .m_sep {
+        max-width: 500px;
+        min-width: 380px;
+    }
+
+    .navnav {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+    .what {
+      left: 30%;
+    }
+
+    .ley73_info {
+      right: 40%;
+    }
+
+    .about-text{
+        min-width: 800px;
+    }
+
+    .about-img{
+        min-width: 400px;
+    }
+
+    .servs-text p {
+        min-width: 500px;
+    }   
+
+    .caption *{
+      font-size: 2.5rem;
+    }
+
+    .carousel-item img {
+      height: 90vh;
+    }
+
+    .proyect-xxl-h1 {
+        font-size: 4em; 
+    }
+
+    .proyect-xxl-font {
+        font-size: 2em;
+        padding: 2rem;
+    }
+
+    .nss-left {
+        min-width: 650px;
+    }
+
+    .nss-right {
+        max-width: 625px;
+        min-width: 600px;
+    }
+
+    .location-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-item {
+        max-width: 350px;
+        min-width: 300px
+    }
+}
+
+
+
+
+/* Button */ 
+button {
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ text-decoration: none;
+ background: transparent;
+ padding: 0;
+ font-size: inherit;
+ font-family: inherit;
+}
+
+button.learn-more {
+ width: 22rem;
+ height: auto;
+}
+
+button.learn-more .circle {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: relative;
+ display: block;
+ margin: 0;
+ width: 3rem;
+ height: 3rem;
+ background: #282936;
+ border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ margin: auto;
+ background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ left: 0.625rem;
+ width: 1.125rem;
+ height: 0.125rem;
+ background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+ position: absolute;
+ content: "";
+ top: -0.29rem;
+ right: 0.0625rem;
+ width: 0.625rem;
+ height: 0.625rem;
+ border-top: 0.125rem solid #fff;
+ border-right: 0.125rem solid #fff;
+ transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ padding: 0.75rem 0;
+ margin: 0 0 0 1.85rem;
+ color: #282936;
+ font-weight: 700;
+ line-height: 1.6;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+button:hover .circle {
+ width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+ background: #fff;
+ transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+ color: #fff;
+}
+
+.cont {
+  --s: 16px; /* control the size */
+  --c1:#879495;
+  --c2:#b5b3e0;
+  
+  --g:#47de9000 66%,var(--c1) 67% 98%,#0000;
+  background:
+    radial-gradient(30% 50% at 30% 100%,var(--g)),
+    radial-gradient(30% 50% at 70%   0%,var(--g)) var(--s) 0,
+    repeating-linear-gradient(90deg,var(--c1) 0 10%,var(--c2) 0 50%);
+  background-size: calc(10*var(--s)) calc(6*var(--s));
+  animation: g17 1.5s infinite linear;
+}
+@keyframes g17 {
+  to {
+    background-position:
+      0 calc(-6*var(--s)), 
+      var(--s) calc(6*var(--s)),
+      0 0;
+  }
+}
+

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Metadatos-->
+  <meta charset="utf-8">
+  <meta name="author" content="Miguel Díaz">
+  <meta name="description" content="Ley 73">
+  <meta name="keywords" content="Scenarios">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Inicio | Ley 73</title>
+
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+  <!--Links-->
+  <link rel="icon" type="image/x-icon" href="src/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Sans+TC:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!--NavBar-->
+  <nav class="navbar navbar-expand-lg fixed-top navnav">
+
+    <div class="container-fluid ms-sm-5 ms-lg-0 ms-0 mynavbar_body">
+
+      <!--Logo--> 
+      <a class="navbar-brand logo-container p-0 col-9 col-lg-1 ms-lg-3 me-lg-5 ms-xxl-0 col-xxl-auto" href="#">
+        <img src="src/Logo.png" width="120" height="120" class="ms-lg-0 ms-xl-5 ms-0" alt="Logo">
+      </a>
+      <button class="navbar-toggler me-sm-5 border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        
+
+        <!--Nav Body-->
+        <div class="offcanvas-body col-xxl-12">
+          <ul class="navbar-nav d-flex ms-2 mt-1 col-xxl-10 col-lg-9 col-xl-9">
+            <!--Toggler Form-->
+            <li class="nav-item navbar-toggler border border-0">
+              <form class="d-flex mt-3 w-100 justify-content-end mb-3 form" role="search">
+                <input class="form-control me-2 f-input" type="search" placeholder="Buscar..." aria-label="Search">
+                <i class="bi bi-search z-3 position-absolute me-4 mt-2"></i>
+              </form>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Sobre nosotros
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item bg-primary text-light" href="#">Acerca de nosotros</a></li>
+                <li><a class="dropdown-item bg-primary text-light" href="#">Nuestros Servicios</a></li>
+              </ul>
+            </li>
+            <li class="nav-item me-5 d-lg-none d-xl-block">
+              <a class="nav-link max" href="#">Maximiza tu pensión</a>
+            </li>
+            <li class="nav-item dropdown d-none d-lg-block d-xl-none">
+              <button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover"
+                data-bs-placement="bottom" data-bs-content="Maximiza tu pensión">
+                <i class="bi bi-plus-lg fw-bold"></i>
+              </button>
+            </li>
+
+            <!--Middle Divider-->
+            <div class="col-xxl-4 m_sep col-lg-3 col-xl-2"></div>
+
+            <!--Search-->
+            <li class="nav-item mb-2 ms-5 ms-xxl-1 navbar-collapse collapse">
+              <a href="#">
+                <span class="search py-2 px-1">
+                  <i class="bi bi-search py-1 px-2 text-dark"></i>
+                </span>
+              </a>
+            </li>
+            <hr class="nav-item">
+
+            <!--Phone Number-->
+            <li class="nav-item ms-2 ms-xxl-0 d-flex login navbar-collapse collapse">
+              <a href="#" class="d-flex text-decoration-none mt-2">
+                <i class="bi bi-telephone-fill" style="color: #56C242;"></i>
+                <p class="fw-bold text-dark ms-2">(449) 241 37 10</p>
+              </a>
+            </li>
+          </ul>
+
+          <!--Citas-->
+          <div class="row navbar-toggler border border-0 nav-item fixed-bottom d-flex justify-content-end position-absolute">
+            <div class="navbar-toggler nav-item border border-0">
+              <button type="button" class="btn btn-outline-success mb-3 w-100 cita">Cita informativa</button>
+            </div>
+          </div>
+
+          <div class="container-fluid w-100 mt-1 navbar-collapse collapse">
+            <button type="button" class="btn btn-outline-success mb-2 cita">Cita informativa</button>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+    </div>
+  </nav>
+
+  <!--Tope-->
+  <div class=" text-light mb-sm-5 bg-dark" style="height: 85px;">.</div>
+
+
+  <!--Hero Ley 73-->
+  <div class="container-fluid mt-5 w-100 d-none d-sm-block legend">
+    <div class="row text-center text-light">
+      <div class="col-xl-10 col-xxl-11 col-lg-11 col-md-11 col-sm-11 col-xs-12 ms-sm-4 ms-lg-5">
+        <h1 class="pt-3 pb-3 ms-xl-5 h1">LEY 73</h1>
+      </div>
+    </div>
+  </div>
+
+  <!--Ley 73-->
+  <div class="container-fluid">
+    <div class="container position-absolute d-flex flex-column justify-content-center align-items-center mt-5 z-2 w-50 pt-1 what">
+      <div class="row">
+        <div class="col-12 col-xl-10 col-xxl-12 text-center">
+          <h3 class="h1">Pero esto... ¿qué es?</h3>
+        </div>
+        <div class="col-12 col-xl-10 col-xxl-12 d-flex flex-column text-center">
+            <i class="bi bi-chat-fill fs-1 icons ms-3 ms-lg-5 ms-xxl-5" ></i>
+            <i class="bi bi-person fs-1 icons me-4 me-lg-0 me-xxl-0"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="container position-absolute d-flex justify-content-center align-items-center mt-5 z-2 w-75 pt-1 ley73_info">
+      <div class="row d-flex justify-content-end">
+        <div class="col-10 col-sm-8 col-lg-7 col-xl-6 text-center ms-xxl-2">
+          <p class="text-light fs-5">La Ley 73 del IMSS es el régimen de pensiones aplicable a los trabajadores inscritos antes del 1 de julio de 1997. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="src/Familia1.jpg" alt="Famili" class="w-100 img">
+
+  <!--About Us-->
+  <div class="container-fluid ab_us">
+    <div class="row py-5 d-flex justify-content-center align-items-center flex-column-reverse flex-lg-row">
+      <div class="col-xl-5 col-xxl-4 col-lg-5 col-md-11 col-sm-10 text-center about-img mt-5">
+        <img src="src/Logo.png" alt="LOGO" class="w-75">
+      </div>
+
+      <div class="col-10 col-sm-10 col-md-12 col-lg-7 col-xl-6 col-xxl-2   me-xl-5 about-text text-center">
+        <h1 class="text-dark mb-5 ms-xxl-3 mt-xs-5 about">ACERCA DE NOSOTROS</h1>
+        <p class="fs-3 text-dark fw-bold ms-xxl-3">MAXIMIZA TU PENSION IMSS</p>
+        <p class="fs-4 w-100 lh-base pe-xxl-5 px-md-5 ms-sm-4 ms-md-0 text-start spacing">Nace con el fin de dar
+          conocimiento, de las oportunidades que ofrece una correcta planeación de la pensión IMSS.</p>
+        <div class="d-flex justify-content-center align-items-center mt-5">
+          <p class="fs-3 text-dark fw-bold ms-xxl-3">MISIÓN</p>
+          <i class="bi bi-trophy-fill fs-3 ms-3 mb-3 award"></i>
+        </div>
+        <p class="fs-4 w-100 lh-base pe-xxl-5 px-md-5 ms-sm-4 ms-md-0 text-start spacing">Somos una empresa enfocada
+          a simplificar, asesorar, capacitar y ayudar a las empresas o personas, en tramitar cualquier
+          JURIDICO-CONTABLE . Así como los mayores beneficios para tu pensión y mejorar la calidad de vida
+          nuestros clientes internos o externos.</p>
+      </div>
+    </div>
+  </div>
+    
+    <div class="container-fluid w-100 d-none d-sm-block legend">
+      <div class="row text-center text-light">
+        <div class="col-xl-10 col-xxl-11 col-lg-11 col-md-11 col-sm-11 col-xs-12 ms-sm-4 ms-lg-5">
+          <h1 class="pt-3 pb-3 ms-xl-5 h1">¿QUÉ TE OFRECE MAXIMIZA TU PENSIÓN?</h1>
+        </div>
+      </div>
+    </div>
+
+    <!--Servs-->
+    <div id="carouselExampleCaptions" class="carousel slide w-100">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="src/Conservacion de Derechos.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <div class="container-fluid bg-light rounded text-dark w-75 caption">
+                      <p class="">Revisión de Conservación de Derechos</p>
+                      <i class="bi bi-pencil-square"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="src/update.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <div class="container-fluid bg-light rounded w-75 text-dark caption">
+                      <p class="">Actualización de Semanas Cotizadas</p>
+                      <i class="bi bi-arrow-repeat"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="src/Estrategia.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <div class="container-fluid bg-light rounded w-100 text-dark caption">
+                      <p class="">Diseño y ejecución de Estrategia Financiera para aumento de pensión</p>
+                      <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="src/Vigencia.avif" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <div class="container-fluid bg-light rounded w-50 text-dark caption">
+                      <p class="py-2">Vigencia de Derechos</p>
+                      <i class="bi bi-check-square"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="src/Financiamiento.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <div class="container-fluid bg-light rounded w-75 text-dark caption">
+                      <p class="">Financiamiento para Proyecto de pensión</p>
+                      <i class="bi bi-currency-dollar"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="src/Afore.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <div class="container-fluid bg-light rounded w-75 text-dark pb-2 caption">
+                      <p class="">Reclamo de Fondo AFORE</p>
+                      <i class="bi bi-database-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    
+    <!--NSS-->
+    <div class="container-fluid pb-lg-5 pb-xxl-0 nss">
+      <h1 class="text-primary text-center pt-5 w-100 about">¡Revisa tu Número de Seguridad Social!</h1>
+    
+      <div class="row mt-5 d-flex justify-content-center r-nss">
+    
+        <!--NSS Left-->
+        <div class="col-sm-9 col-md-11 col-lg-5 col-xl-5 col-xxl-4 nss-left">
+          <!--IMG xs, sm, md-->
+          <img src="src/Familia3.png" alt="Familia_3" class="d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none pb-4 ms-md-3 w-100">
+
+
+          <!--IMG lg, xl, xxl-->
+          <img src="src/Familia2.webp" alt="Familia 2" class="w-100 d-none d-lg-block d-xl-block d-xxl-block my-5">
+    
+          <p>Si el segundo par de dígitos de tu número de afiliación es 97 o menor, puedes alcanzar hasta $81,215.69
+            mensuales de pensión.</p>
+          <p class="py-2">Revisa tu <strong>Número de Seguridad Social</strong> (El segundo par de números indica tu año
+            de inscripción).</p>
+          <p class="fs-3 text-center py-md-2">51 <strong class="bg-success text-light">94</strong> 76 06 74 2</p>
+          <p class="pb-3">Si es <strong>96</strong> o menor, te corresponde <strong>la ley 1973</strong>, que te permite
+            alcanzar hasta 25 veces el salario mínimo de pensión (alrededor de $81,215.69 mensuales).</p>
+          <span class="bg-success text-light">Si es <strong>97</strong>, es necesario revisar si el trabajador fue
+            registrado antes de que entrara en vigencia la nueva Ley del sistema de Ahorro para el retiro AFORE (1° de
+            Julio de 1997)</span>
+          <p class="py-4">Si es <strong>98</strong> (del año 1998 o posterior) solicita los métodos de pensión para
+            jóvenes.</p>
+        </div>
+    
+        <!--NSS Right-->
+        <div class="col-sm-9 col-md-11 col-lg-6 col-xl-5 col-xxl-4 pb-5 nss-right">
+    
+          <!--IMG xs, sm, md-->
+          <img src="src/Familia2.webp" alt="Familia 2" class="d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none w-100">
+    
+          <p class="pt-5 mb-4 mb-xxl-0">La mayoría de los asegurados, vienen a buscar informes cuando ya están
+            cerca de los 60 años y ya no hay mucho que hacer para incrementar su pensión; lo ideal es tener una
+            planificación a mas tardar a los 50 años, para lograr obtener el monto máximo, sin embargo, si ya estas muy
+            cerca de los 60 años,
+            asesórate cuanto antes y alcanza lo mas alto posible.</p>
+          <p class="fw-bold pt-xxl-4">¡Solicita tu cita ahora y comienza desde ya a incrementar el monto de tu pensión!</p>
+          <p>Envía un SMS o un Whatsapp con tu CURP y tu Numero de IMSS</p>
+          <strong class="d-flex fs-3 justify-content-center">
+            <i class="bi bi-whatsapp wsp me-2"></i>
+            <p>449 241 3710</p>
+          </strong>
+          <p class="text-center fs-4 fw-bold">¡Descubre desde ahora tu monto MÁXIMO de pensión!</p>
+
+          <!--IMG lg, xl, xxl-->
+          <div class="container-fluid text-end mt-5 text-center d-none d-lg-block d-xl-block d-xxl-block img-nss">
+            <img src="src/Familia3.png" alt="Familia 3" class="h-100">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Location-->
+    <div class="container-fluid location-container">
+      <div class="container-fluid d-flex justify-content-center mb-md-5 mb-lg-0">
+        <table class="ms-lg-5">
+          <tr>
+            <td class="text-end">
+              <h1 class="w-100 py-4 font text-center text-light">¡Solicita tu cita informativa SIN COSTO!
+              </h1>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <!-- From Uiverse.io by adamgiebl -->
+              <button class="mb-5 mb-lg-0">
+                <div class="svg-wrapper-1">
+                  <div class="svg-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path fill="currentColor"
+                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <span>CITA</span>
+              </button>
+            
+            </td>
+          </tr>
+        </table>
+      </div>
+    
+      <div class="row text-start d-flex flex-row flex-lg-row-reverse mb-md-5 top-part">
+        <div class="p-0"></div>
+        <!--Map-->
+        <div class="col-md-11 col-lg-5 ms-md-5 ms-lg-0 col-xxl-4 me-lg-5 col-xl-4">
+          <a
+            href="https://www.google.com/maps/place/Maximiza+tu+pensi%C3%B3n+IMSS+-+Aguascalientes/@21.9156843,-102.310869,17z/data=!4m6!3m5!1s0x8429ef9691105407:0xd39cc1f77b84d84a!8m2!3d21.9156794!4d-102.3059981!16s%2Fg%2F11fmm0nft8?entry=tts&g_ep=EgoyMDI0MDYwNS4wKgBIAVAD">
+            <img src="src/maps.png" alt="Location" class="w-100">
+          </a>
+        </div>
+    
+        <div class="col-xl-3 col-lg-1 col-xxl-3"></div>
+    
+        <!--Video 1-->
+        <div class="col-md-11 col-lg-4 col-xl-4 text-start ms-lg-5">
+          <p class="font fs-5 ms-5 ps-lg-3 pt-5 pt-lg-0">Ubicacion</p>
+          <div class="container-fluid d-flex w-75">
+            <i class="bi bi-geo-alt-fill"></i>
+            <a href="https://www.google.com/maps/place/Valle+de+Guadalupe+400,+Bosques+del+Prado+Sur,+20130+Aguascalientes,+Ags./@21.9156794,-102.3059981,17z/data=!3m1!4b1!4m6!3m5!1s0x8429eefe061d60c9:0x90e2b40ceaf14fde!8m2!3d21.9156794!4d-102.3059981!16s%2Fg%2F11nnkt68_6?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D"
+              class="text-dark anchor w-100 ps-lg-2 ">Calle Valle de Gudalupe #400 Bosques del Prado Sur, CP.20130
+              Aguascalientes, Ags. Mx</a>
+          </div>
+          <video src="src/Cómo_llegar_JM.mp4" class="w-100 mt-4 ms-md-5 ps-lg-3 ms-lg-5 ms-xl-3" controls></video>
+        </div>
+    
+      </div>
+    
+      <!--Video 2-->
+      <div class="row text-center ms-lg-4 py-5 bottom-part">
+    
+        <div class="col-lg-1 me-lg-3 d-none d-lg-block d-xl-none"></div>
+    
+        <div class="col-md-11 col-lg-4 col-xl-4 text-start ms-md-5 ms-lg-5 d-flex flex-column-reverse flex-lg-column">
+          <div class="container-fluid d-flex w-75 mt-3 mt-lg-0 ps-lg-0 pt-4 pt-lg-0">
+            <i class="bi bi-geo-alt-fill"></i>
+            <a href="https://www.google.com/maps/place/Blvd.+A+Zacatecas+701,+Las+Hadas,+20140+Aguascalientes,+Ags./@21.9126952,-102.289617,17z/data=!3m1!4b1!4m6!3m5!1s0x8429ee520f1d14d7:0x466bc5e10163ad15!8m2!3d21.9126952!4d-102.289617!16s%2Fg%2F11c1dsxm0l?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D"
+              class="text-dark anchor w-100 ms-lg-2 ps-xxl-0 ms-xxl-2">Blvd. A Zacatecas #701C.C. Agroexprex Int. 1A Las
+              Hadas, CP.20140 Aguascalientes, Ags. Mx</a>
+          </div>
+          <video src="src/Agropecuario.mp4" class="w-100 mt-4 ps-xl-0 ms-xxl-4 ms-xl-0 pe-xxl-3" controls></video>
+        </div>
+      </div>
+    </div>
+
+    <!--Contact us-->
+    <div class="container-fluid text-light text-center cont" style="background-color: #15213a;">
+      <h1 class="fw-bold font py-3">Contáctanos</h1>
+    </div>
+    
+    
+    
+    <div
+      class="container-fluid d-flex flex-column justify-content-center align-items-start flex-lg-row pt-5 ps-sm-5 ps-lg-0 info">
+      <!--Ley73-->
+      <div class="text-start ley73 info-item ms-lg-5">
+        <h5 class="text-light font">Ley73</h5>
+        <p>Inicio</p>
+        <p>Sobre nosotros</p>
+        <p>Nuestros Servicios</p>
+        <p>Maximiza tu pensión</p>
+        <p>Política de privacidad</p>
+      </div>
+    
+      <!--Síguenos-->
+      <div class="text-start mx-lg-5 mx-xxl-0 follow info-item mb-3">
+        <h5 class="text-light font text-start ms-lg-3">Síganos</h5>
+        <div class="container-fluid d-flex ms-lg-1 my-3">
+          <i class="bi bi-facebook text-light me-2"></i>
+          <a href="https://www.facebook.com/people/Maximiza-Tu-Pension-IMSS-Aguascalientes/100063606447098/"
+            target="_blank">Facebook</a>
+        </div>
+        <div class="container-fluid d-flex ms-lg-1">
+          <i class="bi bi-instagram text-light me-2"></i>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    
+      <!--Contactar-->
+      <div class="text-start me-3 me-xxl-0 num info-item">
+        <h5 class="text-light font text-start ms-lg-3">Contactar</h5>
+        <div class="container-fluid d-flex ms-lg-1">
+          <i class="bi bi-envelope-fill text-light me-2"></i>
+          <a href="mailto:vero@espinozapymes.com?subject=Ley 73" class="mb-3">vero@espinozapymes.com</a>
+        </div>
+        <div class="container-fluid d-flex ms-lg-1">
+          <i class="bi bi-telephone-fill text-light me-2"></i>
+          <p>+52 (449) 241 37 10</p>
+        </div>
+        <div class="container-fluid d-flex ms-lg-1">
+          <i class="bi bi-whatsapp text-light me-2"></i>
+          <a href="https://wa.me/524499963649" class="mb-3">+52 (449) 996 36 49</a>
+        </div>
+      </div>
+    
+      <!--Ubicación-->
+      <div class="text-start col-lg-3 col-xl-3 col-xxl-1 info-item">
+        <h5 class="text-light font text-start ms-lg-3">Ubicación</h5>
+        <div class="container-fluid d-flex ms-lg-1">
+          <i class="bi bi-geo-alt-fill text-light me-2"></i>
+          <a href="https://www.google.com/maps/place/Valle+de+Guadalupe+400,+Bosques+del+Prado+Sur,+20130+Aguascalientes,+Ags./@21.9156794,-102.3059981,17z/data=!3m1!4b1!4m6!3m5!1s0x8429eefe061d60c9:0x90e2b40ceaf14fde!8m2!3d21.9156794!4d-102.3059981!16s%2Fg%2F11nnkt68_6?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D"
+            class="mb-3">Calle Valle de Guadalupe #400 Bosques del Prado Sur, CP.20130 Aguascalientes, Ags. Mx</a>
+        </div>
+        <div class="container-fluid d-flex ms-lg-1 mb-4">
+          <i class="bi bi-geo-alt-fill text-light me-2"></i>
+          <a
+            href="https://www.google.com/maps/place/Blvd.+A+Zacatecas+701,+Las+Hadas,+20140+Aguascalientes,+Ags./@21.9126952,-102.289617,17z/data=!3m1!4b1!4m6!3m5!1s0x8429ee520f1d14d7:0x466bc5e10163ad15!8m2!3d21.9126952!4d-102.289617!16s%2Fg%2F11c1dsxm0l?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D">Blvd.
+            A Zacatecas #701 Int. 1A Las Hadas, CP.20140 Aguascalientes, Ags. Mx</a>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    <!--Copy Right-->
+    <div class="container-fluid position-absolute copy">
+      <div class="container">
+        <p class="text-light pt-3 ">
+          © Todos los derechos reservados 2024
+        </p>
+      </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

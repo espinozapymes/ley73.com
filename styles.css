@@ -110,7 +110,7 @@ body::-webkit-scrollbar-thumb {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-}
+}   
 
 .legend-xs h1 {
     font-size: 2rem; 
@@ -139,7 +139,8 @@ body::-webkit-scrollbar-thumb {
     font-size: 3em;
 }
 
-.img-xs {
+
+.img-xs, .img {
     width: 100%; 
     height: 70dvb; 
     object-fit: cover;
