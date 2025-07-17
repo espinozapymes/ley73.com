@@ -27,6 +27,24 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;  
     border: 10px solid transparent;
 }
+/* Cita Informativa */
+
+.date {
+  top: 10rem;
+  font-family: "Merriweather", serif;
+  border-radius: 5px;
+  background-color: green;
+  max-width: 200px;
+  color: white;
+}
+
+.date:hover {
+  cursor: pointer;
+  color: green;
+  background: white;
+  transition-duration: 0.3s;
+  border: green 3px solid;
+}
 
 /*Navbar*/
 .f-input {
@@ -38,7 +56,6 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--bg-elements);
     border-radius: 50px 50px 50px 50px;
 }
-
 
 .logo-container {
     padding: 0 0 0 4rem;
@@ -89,6 +106,10 @@ body::-webkit-scrollbar-thumb {
     color: black;
 }
 
+.tope {
+  height: 85px;
+}
+
 /*Legend*/
 .legend {
     background: var(--hero);
@@ -109,7 +130,6 @@ body::-webkit-scrollbar-thumb {
   color: var(--font); 
   background-color: rgba(0, 0, 0, 0.3); 
   border-radius: 5px;
-
 }
 
 .icons {
@@ -221,22 +241,6 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
-
-.wapp {
-    background-color: #25d366; 
-    top: 50%; 
-    box-shadow: 5px 5px 5px gray; 
-    top: 85%; 
-    left:93%;
-    z-index: 3;
-}
-
-.wapp:hover {
-    background-color: black; 
-    transition-duration: 0.5s;
-    cursor: pointer;
-}
-
 /*Copy Right*/
 
 .copy {
@@ -249,26 +253,14 @@ body::-webkit-scrollbar-thumb {
     .loc {
         width: 100%;
     }
-    .wapp {
-        top: 85%;
-        left: 85%;
-    }
-}
-
-
-@media (min-width: 0px) and (max-width: 576){
-    .wapp {
-        top: 70%;
-        left: 50%;
-    }
 }
 
 @media (min-width: 1400px) and (max-width: 6000px) {
-    .Espinoza, .about-text {
+    .about-text {
         max-width: 1800px;
     }
 
-    .PYMES, .about-img, .servs-text p, .nss-left {
+    .about-img, .nss-left {
         max-width: 600px;
     }
 
@@ -295,14 +287,6 @@ body::-webkit-scrollbar-thumb {
         align-items: center;
     }
 
-    .Espinoza{
-        min-width: 600px;
-    }
-
-    .PYMES {
-        min-width: 550px;
-    }
-
     .what {
       left: 30%;
     }
@@ -319,25 +303,12 @@ body::-webkit-scrollbar-thumb {
         min-width: 400px;
     }
 
-    .servs-text p {
-        min-width: 500px;
-    }   
-
     .caption *{
       font-size: 2.5rem;
     }
 
     .carousel-item img {
       height: 90vh;
-    }
-
-    .proyect-xxl-h1 {
-        font-size: 4em; 
-    }
-
-    .proyect-xxl-font {
-        font-size: 2em;
-        padding: 2rem;
     }
 
     .nss-left {

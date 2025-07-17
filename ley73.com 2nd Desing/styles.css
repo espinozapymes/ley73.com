@@ -237,6 +237,7 @@ body::-webkit-scrollbar-thumb {
 
 .img-nss {
     height: 35%;
+    width: 100%;
 }
 
 .img-nss img {
@@ -334,8 +335,6 @@ body::-webkit-scrollbar-thumb {
         justify-content: center;
         align-items: center;
     }
-
-    
 
     .what {
       left: 30%;
