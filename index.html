@@ -16,7 +16,6 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-
   <!--Links-->
   <link rel="icon" type="image/x-icon" href="src/Logo-remove.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,28 +24,91 @@
     href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Sans+TC:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Banner flotante (estilos) -->
+  <style>
+    .floating-banner {
+      position: fixed;
+      left: clamp(12px, 2vw, 24px);
+      bottom: clamp(12px, 2vw, 24px);
+      transform-origin: bottom right;
+
+      max-width: 360px;
+      z-index: 1090;
+      /* por encima de otros flotantes */
+      animation: breathe 2.8s ease-in-out infinite;
+    }
+
+    .floating-banner .card {
+      border: 0;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, .18);
+      overflow: hidden;
+    }
+
+    .floating-banner .card-body {
+      padding: 14px 16px;
+    }
+
+    .floating-banner:hover {
+      animation-play-state: paused;
+      /* pausa al pasar el mouse */
+      transform: translateY(-2px) scale(1.02);
+      /* pequeña elevación */
+    }
+
+    @keyframes breathe {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.06);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .floating-banner {
+        left: 12px;
+        /* que respire en móviles */
+        right: 12px;
+        bottom: 12px;
+        width: auto;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .floating-banner {
+        animation: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <div class="position-fixed z-3 rounded-circle py-2 wapp">
-    <a href="https://wa.me/524499963649" target="_blank">
+    <a href="https://wa.me/524499963649" target="_blank" rel="noopener">
       <i class="bi bi-whatsapp fs-3 text-light px-3"></i>
     </a>
   </div>
   <div class="row">
-    
+
   </div>
   <!--NavBar-->
   <nav class="navbar navbar-expand-lg fixed-top navnav">
 
     <div class="container-fluid ms-sm-5 ms-lg-0 ms-0 mynavbar_body">
 
-      <!--Logo--> 
+      <!--Logo-->
       <a class="navbar-brand logo-container p-0 col-9 col-lg-1 ms-lg-3 me-lg-5 ms-xxl-0 col-xxl-auto" href="#">
         <img src="src/Logo-remove.png" width="120" height="120" class="ms-lg-0 ms-xl-5 ms-0" alt="Logo">
       </a>
-      <button class="navbar-toggler me-sm-5 border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <button class="navbar-toggler me-sm-5 border border-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -55,7 +117,7 @@
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        
+
 
         <!--Nav Body-->
         <div class="offcanvas-body col-xxl-12">
@@ -111,19 +173,22 @@
           </ul>
 
           <!--Citas-->
-          <div class="row navbar-toggler border border-0 nav-item fixed-bottom d-flex justify-content-end position-absolute">
+          <div
+            class="row navbar-toggler border border-0 nav-item fixed-bottom d-flex justify-content-end position-absolute">
             <div class="navbar-toggler nav-item border border-0">
-              <a href="https://espinozapymes.com/pensiones/#/pensiones/registro" target="_blank" class="btn btn-outline-primary mb-3 w-100 cita">Cita informativa</a>
+              <a href="https://espinozapymes.com/pensiones/#/pensiones/registro" target="_blank"
+                class="btn btn-outline-primary mb-3 w-100 cita">Cita informativa</a>
             </div>
           </div>
 
           <div class="container-fluid w-100 mt-1 navbar-collapse collapse">
-            <a href="https://espinozapymes.com/pensiones/#/pensiones/registro" target="_blank" class="btn btn-outline-primary mb-2 cita">Cita informativa</a>
+            <a href="https://espinozapymes.com/pensiones/#/pensiones/registro" target="_blank"
+              class="btn btn-outline-primary mb-2 cita">Cita informativa</a>
           </div>
 
         </div>
       </div>
-      
+
     </div>
     </div>
   </nav>
@@ -156,7 +221,7 @@
     <div
       class="container text-center position-absolute d-flex flex-column justify-content-center align-items-center z-2 start-50 translate-middle w-100 py-2 proyect">
       <div class="row">
-          
+
         <div class="col-11 ms-5">
           <h1 class="h1">¡Financiamos tu proyecto de pensión!</h1>
         </div>
@@ -164,13 +229,15 @@
       <div class="row">
         <div class="col-12">
           <p>Consulta los requisitos - Previa Autorización</p>
-          <a t href="https://espinozapymes.com/pensiones/#/pensiones/registro" target="_blank" class="btn btn-outline-primary mb-2 cita font-color">Agendar una cita
+          <a t href="https://espinozapymes.com/pensiones/#/pensiones/registro" target="_blank"
+            class="btn btn-outline-primary mb-2 cita font-color">Agendar una cita
             informativa</a>
         </div>
       </div>
     </div>
   </div>
-  <img src="src/prueba2.png" alt="Familia" class="d-none d-sm-block img" style="width: 100%; height: 70dvb; object-fit: cover;">
+  <img src="src/prueba2.png" alt="Familia" class="d-none d-sm-block img"
+    style="width: 100%; height: 70dvb; object-fit: cover;">
 
 
   <!--xs-->
@@ -186,7 +253,8 @@
       <div class="row">
         <div class="col-12">
           <p>Consulta los requisitos - Previa Autorización</p>
-          <a  href="https://espinozapymes.com/pensiones/#/pensiones/registro" target="_blank" type="button" class="btn btn-outline-primary mb-2 cita font-color">Agendar una cita
+          <a href="https://espinozapymes.com/pensiones/#/pensiones/registro" target="_blank" type="button"
+            class="btn btn-outline-primary mb-2 cita font-color">Agendar una cita
             informativa</a>
         </div>
       </div>
@@ -208,7 +276,8 @@
       <div class="row">
         <div class="col-12 d-flex">
           <p class="proyect-xxl-font">Consulta los requisitos - Previa Autorización</p>
-          <a  href="https://espinozapymes.com/pensiones/#/pensiones/registro" target="_blank" type="button" class="btn btn-outline-primary mb-2 cita font-color proyect-xxl-font">Agendar una cita
+          <a href="https://espinozapymes.com/pensiones/#/pensiones/registro" target="_blank" type="button"
+            class="btn btn-outline-primary mb-2 cita font-color proyect-xxl-font">Agendar una cita
             informativa</a>
         </div>
       </div>
@@ -221,7 +290,8 @@
   <div class="container-fluid EP">
     <div class="row ps-md-5 ps-lg-0 d-flex justify-content-center align-items-center">
       <div class=" col-lg-6 col-sm-10 col-xs-6 col-md-11 col-xl-5 col-xxl-2 mb-xxl-5 me-xl-5 ps-lg-5 ps-xxl-0 Espinoza">
-        <p class="fs-3 w-100 pt-lg-5 mt-xl-3 mt-xxl-0 pt-xxl-0">Espinoza consultoría le invita a participar en la encuesta sobre el
+        <p class="fs-3 w-100 pt-lg-5 mt-xl-3 mt-xxl-0 pt-xxl-0">Espinoza consultoría le invita a participar en la
+          encuesta sobre el
           esquema de pensiones en México.</p>
         <button type="button" class="btn btn-outline-primary cita fs-5 font-color">Haz clic aquí</button>
       </div>
@@ -237,7 +307,8 @@
       <div class="col-xl-6 col-xxl-2 col-xs-12 col-lg-7 col-md-12 col-sm-9 me-xl-5 about-text">
         <h1 class="text-primary mb-5 ms-xxl-3 mt-xs-5 about">ACERCA DE NOSOTROS</h1>
         <p class="fs-3 text-primary fw-bold ms-xxl-3">MAXIMIZA TU PENSION IMSS</p>
-        <p class="fs-4 w-100 lh-base pe-xxl-5 px-md-5 ms-sm-4 ms-md-0 text-start spacing">Nace con el fin de dar conocimiento, de las oportunidades que ofrece una correcta planeación de la pensión IMSS.</p>
+        <p class="fs-4 w-100 lh-base pe-xxl-5 px-md-5 ms-sm-4 ms-md-0 text-start spacing">Nace con el fin de dar
+          conocimiento, de las oportunidades que ofrece una correcta planeación de la pensión IMSS.</p>
       </div>
       <div class="col-xl-5 col-xxl-2 col-lg-5 col-md-11 col-sm-10 text-center about-img">
         <img src="src/Logo-remove.png" alt="LOGO" class="w-75">
@@ -257,7 +328,8 @@
 
       <!--lg, xl, xxl-->
       <div class="col-xxl-3"></div>
-      <div class="col-xl-6 col-lg-6 col-xxl-3 d-flex flex-column fs-3 border-end me-5 pe-5 d-none d-lg-block d-xl-block d-xxl-block servs-text">
+      <div
+        class="col-xl-6 col-lg-6 col-xxl-3 d-flex flex-column fs-3 border-end me-5 pe-5 d-none d-lg-block d-xl-block d-xxl-block servs-text">
         <div class="d-flex justify-content-end mb-5">
           <p class="me-3 w-75 text-end">Revisión de Conservación de Derechos</p>
           <i class="bi bi-pencil-square text-primary fs-1"></i>
@@ -350,9 +422,13 @@
           class="d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none w-100">
 
         <div class="text-light py-lg-2 py-xxl-0">.</div>
-        <p class="pt-lg-5 mb-4 mb-xxl-0 mt-xxl-4">La mayoría de los asegurados, vienen a buscar informes cuando ya están cerca de los 60 años y ya no hay mucho que hacer para incrementar su pensión; lo ideal es tener una planificación a mas tardar a los 50 años, para lograr obtener el monto máximo, sin embargo, si ya estas muy cerca de los 60 años,
-        asesórate cuanto antes y alcanza lo mas alto posible.</p>
-        <p class="fw-bold pt-xxl-4">¡Solicita tu cita ahora y comienza desde ya a incrementar el monto de tu pensión!</p>
+        <p class="pt-lg-5 mb-4 mb-xxl-0 mt-xxl-4">La mayoría de los asegurados, vienen a buscar informes cuando ya están
+          cerca de los 60 años y ya no hay mucho que hacer para incrementar su pensión; lo ideal es tener una
+          planificación a mas tardar a los 50 años, para lograr obtener el monto máximo, sin embargo, si ya estas muy
+          cerca de los 60 años,
+          asesórate cuanto antes y alcanza lo mas alto posible.</p>
+        <p class="fw-bold pt-xxl-4">¡Solicita tu cita ahora y comienza desde ya a incrementar el monto de tu pensión!
+        </p>
         <p>Envía un SMS o un Whatsapp con tu CURP y tu Numero de IMSS</p>
         <strong class="d-flex fs-3 justify-content-center">
           <i class="bi bi-whatsapp wsp"></i>
@@ -376,7 +452,8 @@
         </tr>
         <tr>
           <td class="">
-            <a  href="https://espinozapymes.com/pensiones/#/pensiones/registro" target="_blank" class="btn btn-outline-primary mt-3 mb-2 cita">Agenda una cita informativa</a>
+            <a href="https://espinozapymes.com/pensiones/#/pensiones/registro" target="_blank"
+              class="btn btn-outline-primary mt-3 mb-2 cita">Agenda una cita informativa</a>
           </td>
         </tr>
       </table>
@@ -417,7 +494,8 @@
         <div class="container-fluid d-flex w-75 mt-3 mt-lg-0 ps-lg-0">
           <i class="bi bi-geo-alt-fill"></i>
           <a href="https://www.google.com/maps/place/Blvd.+A+Zacatecas+701,+Las+Hadas,+20140+Aguascalientes,+Ags./@21.9126952,-102.289617,17z/data=!3m1!4b1!4m6!3m5!1s0x8429ee520f1d14d7:0x466bc5e10163ad15!8m2!3d21.9126952!4d-102.289617!16s%2Fg%2F11c1dsxm0l?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D"
-            class="text-dark anchor w-100 ms-lg-2 ps-xxl-0 ms-xxl-2">Blvd. A Zacatecas #701C.C. Agroexprex Int. 1A Las Hadas, CP.20140 Aguascalientes, Ags. Mx</a>
+            class="text-dark anchor w-100 ms-lg-2 ps-xxl-0 ms-xxl-2">Blvd. A Zacatecas #701C.C. Agroexprex Int. 1A Las
+            Hadas, CP.20140 Aguascalientes, Ags. Mx</a>
         </div>
         <video src="src/Agropecuario.mp4" class="w-100 mt-4 ps-xl-0 ms-xxl-4 ms-xl-0 pe-xxl-3" controls></video>
       </div>
@@ -436,7 +514,8 @@
 
 
 
-  <div class="container-fluid d-flex flex-column justify-content-center align-items-start flex-lg-row pt-5 ps-sm-5 ps-lg-0 info">
+  <div
+    class="container-fluid d-flex flex-column justify-content-center align-items-start flex-lg-row pt-5 ps-sm-5 ps-lg-0 info">
     <!--Ley73-->
     <div class="text-start ley73 info-item ms-lg-5">
       <h5 class="text-light font">Ley73</h5>
@@ -452,7 +531,8 @@
       <h5 class="text-light font text-start ms-lg-3">Síganos</h5>
       <div class="container-fluid d-flex ms-lg-1 my-3">
         <i class="bi bi-facebook text-light me-2"></i>
-        <a href="https://www.facebook.com/people/Maximiza-Tu-Pension-IMSS-Aguascalientes/100063606447098/" target="_blank">Facebook</a>
+        <a href="https://www.facebook.com/people/Maximiza-Tu-Pension-IMSS-Aguascalientes/100063606447098/"
+          target="_blank">Facebook</a>
       </div>
       <div class="container-fluid d-flex ms-lg-1">
         <i class="bi bi-instagram text-light me-2"></i>
@@ -482,11 +562,14 @@
       <h5 class="text-light font text-start ms-lg-3">Ubicación</h5>
       <div class="container-fluid d-flex ms-lg-1">
         <i class="bi bi-geo-alt-fill text-light me-2"></i>
-        <a href="https://www.google.com/maps/place/Valle+de+Guadalupe+400,+Bosques+del+Prado+Sur,+20130+Aguascalientes,+Ags./@21.9156794,-102.3059981,17z/data=!3m1!4b1!4m6!3m5!1s0x8429eefe061d60c9:0x90e2b40ceaf14fde!8m2!3d21.9156794!4d-102.3059981!16s%2Fg%2F11nnkt68_6?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D" class="mb-3">Calle Valle de Guadalupe #400 Bosques del Prado Sur, CP.20130 Aguascalientes, Ags. Mx</a>
+        <a href="https://www.google.com/maps/place/Valle+de+Guadalupe+400,+Bosques+del+Prado+Sur,+20130+Aguascalientes,+Ags./@21.9156794,-102.3059981,17z/data=!3m1!4b1!4m6!3m5!1s0x8429eefe061d60c9:0x90e2b40ceaf14fde!8m2!3d21.9156794!4d-102.3059981!16s%2Fg%2F11nnkt68_6?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D"
+          class="mb-3">Calle Valle de Guadalupe #400 Bosques del Prado Sur, CP.20130 Aguascalientes, Ags. Mx</a>
       </div>
       <div class="container-fluid d-flex ms-lg-1 mb-4">
         <i class="bi bi-geo-alt-fill text-light me-2"></i>
-        <a href="https://www.google.com/maps/place/Blvd.+A+Zacatecas+701,+Las+Hadas,+20140+Aguascalientes,+Ags./@21.9126952,-102.289617,17z/data=!3m1!4b1!4m6!3m5!1s0x8429ee520f1d14d7:0x466bc5e10163ad15!8m2!3d21.9126952!4d-102.289617!16s%2Fg%2F11c1dsxm0l?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D">Blvd. A Zacatecas #701 Int. 1A Las Hadas, CP.20140 Aguascalientes, Ags. Mx</a>
+        <a
+          href="https://www.google.com/maps/place/Blvd.+A+Zacatecas+701,+Las+Hadas,+20140+Aguascalientes,+Ags./@21.9126952,-102.289617,17z/data=!3m1!4b1!4m6!3m5!1s0x8429ee520f1d14d7:0x466bc5e10163ad15!8m2!3d21.9126952!4d-102.289617!16s%2Fg%2F11c1dsxm0l?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D">Blvd.
+          A Zacatecas #701 Int. 1A Las Hadas, CP.20140 Aguascalientes, Ags. Mx</a>
       </div>
     </div>
   </div>
@@ -502,6 +585,25 @@
       </p>
     </div>
   </div>
+
+  <!-- Banner flotante (HTML) -->
+  <div class="floating-banner">
+    <div class="card">
+      <div class="card-body d-flex align-items-center">
+        <div class="me-3">
+          <i class="bi bi-briefcase-fill fs-2 text-primary" aria-hidden="true"></i>
+        </div>
+        <div class="flex-grow-1">
+          <p class="mb-2 fw-semibold m-0">¿Quieres trabajar con nosotros?</p>
+          <a href="https://www.espinozapymes.com/bolsadetrabajo.php" target="_blank" rel="noopener"
+            class="btn btn-primary btn-sm mt-2">
+            click aquí
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Banner flotante -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

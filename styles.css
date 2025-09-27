@@ -242,7 +242,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #25d366; 
     top: 50%; 
     box-shadow: 5px 5px 5px gray; 
-    top: 85%; 
+    top: 75%; 
     left:93%;
     z-index: 3;
 }
