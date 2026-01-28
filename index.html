@@ -31,30 +31,54 @@
       position: fixed;
       left: clamp(12px, 2vw, 24px);
       bottom: clamp(12px, 2vw, 24px);
-      transform-origin: bottom right;
-
+      transform-origin: bottom left;
       max-width: 360px;
-      z-index: 1090;
-      /* por encima de otros flotantes */
+      z-index: 2;
       animation: breathe 2.8s ease-in-out infinite;
     }
 
     .floating-banner .card {
       border: 0;
-      border-radius: 14px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, .18);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3), 0 4px 8px rgba(0, 0, 0, 0.1);
       overflow: hidden;
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      border: 2px solid rgba(37, 211, 102, 0.2);
     }
 
     .floating-banner .card-body {
-      padding: 14px 16px;
+      padding: 16px 18px;
     }
 
     .floating-banner:hover {
       animation-play-state: paused;
-      /* pausa al pasar el mouse */
-      transform: translateY(-2px) scale(1.02);
-      /* pequeña elevación */
+      transform: translateY(-4px) scale(1.03);
+      transition: transform 0.3s ease;
+    }
+
+    .floating-banner .btn-primary {
+      background: linear-gradient(135deg, #25d366 0%, #20ba5a 100%);
+      border: none;
+      border-radius: 8px;
+      padding: 8px 16px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);
+    }
+
+    .floating-banner .btn-primary:hover {
+      background: linear-gradient(135deg, #20ba5a 0%, #1da851 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    }
+
+    .floating-banner .bi-briefcase-fill {
+      color: #25d366;
+    }
+
+    .floating-banner p {
+      color: #2c3e50;
+      font-weight: 600;
     }
 
     @keyframes breathe {
@@ -63,7 +87,7 @@
       }
 
       50% {
-        transform: scale(1.06);
+        transform: scale(1.04);
       }
 
       100% {
@@ -71,13 +95,38 @@
       }
     }
 
+    @media (max-width: 992px) {
+      .floating-banner {
+        left: 12px;
+        right: auto;
+        bottom: 100px;
+        max-width: 280px;
+      }
+    }
+
     @media (max-width: 575.98px) {
       .floating-banner {
         left: 12px;
-        /* que respire en móviles */
-        right: 12px;
-        bottom: 12px;
-        width: auto;
+        right: auto;
+        bottom: 120px;
+        max-width: 260px;
+      }
+
+      .floating-banner .card-body {
+        padding: 12px 14px;
+      }
+
+      .floating-banner p {
+        font-size: 0.9rem;
+      }
+
+      .floating-banner .btn-primary {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+      }
+
+      .floating-banner .bi-briefcase-fill {
+        font-size: 1.5rem;
       }
     }
 
@@ -91,7 +140,7 @@
 
 <body>
   <div class="position-fixed z-3 rounded-circle py-2 wapp">
-    <a href="https://wa.me/524499963649" target="_blank" rel="noopener">
+    <a href="https://wa.me/524492413710" target="_blank" rel="noopener">
       <i class="bi bi-whatsapp fs-3 text-light px-3"></i>
     </a>
   </div>
@@ -553,7 +602,7 @@
       </div>
       <div class="container-fluid d-flex ms-lg-1">
         <i class="bi bi-whatsapp text-light me-2"></i>
-        <a href="https://wa.me/524499963649" class="mb-3">+52 (449) 996 36 49</a>
+        <a href="https://wa.me/524492413710" class="mb-3">+52 (449) 241 3710</a>
       </div>
     </div>
 
@@ -591,13 +640,13 @@
     <div class="card">
       <div class="card-body d-flex align-items-center">
         <div class="me-3">
-          <i class="bi bi-briefcase-fill fs-2 text-primary" aria-hidden="true"></i>
+          <i class="bi bi-briefcase-fill fs-2" aria-hidden="true"></i>
         </div>
         <div class="flex-grow-1">
-          <p class="mb-2 fw-semibold m-0">¿Quieres trabajar con nosotros?</p>
+          <p class="mb-2 m-0">¿Quieres trabajar con nosotros?</p>
           <a href="https://www.espinozapymes.com/bolsadetrabajo.php" target="_blank" rel="noopener"
             class="btn btn-primary btn-sm mt-2">
-            click aquí
+            ¡Únete al equipo!
           </a>
         </div>
       </div>
